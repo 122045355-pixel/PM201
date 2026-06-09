@@ -4,18 +4,15 @@ import {component} from 'react';
 import { StyleSheet, Text, View,Image} from 'react-native';
 import {Saludo} from './components/Saludo';
 import {Saludo2} from './components/Saludo2';
+import {Perfil} from './components/Perfil';
 
 //zona 2 main components
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={require('./assets/wave.png')}/>
-      <Text>Hola mundo</Text>
-      <Text>-----------------------------</Text>
-      <Saludo />
-      <Text>-----------------------------</Text>
-      <Saludo2 />
-        
+      <Perfil nombre='Emiliano Figueroa' carrera='ISC' materia='Programación Movil' cuatri='9no'/>
+      <Perfil nombre='ROberto' carrera='Si' materia='Programación Movil' cuatri='8vo'/>
+
       <StatusBar style="auto" />
     </View>
   );
