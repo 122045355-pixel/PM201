@@ -8,6 +8,9 @@ import Componente1ra from './Componente1ra';
 import Practica10 from './Practica10';
 import Presable from './Presable';
 import SwitchScreen from './SwitchScreen';
+import { Componente40 } from './Componente4.0';
+import  ComponenteAlerta   from './componenteAlerta';
+
 
 //zona 2 main components
 export default function App() {
@@ -23,31 +26,41 @@ export default function App() {
           return <Presable />;
         case 'switch':
           return <SwitchScreen />;
+        case 'Componente40':
+          return <Componente40 />;
+        case 'componenteAlerta':
+          return <ComponenteAlerta />;
        case 'menu': 
         default:
 
          return (
-          <view>
+          <View>
              <Text>Menú de prácticas</Text>
                 <Button title='Practica Tarjetas' onPress={()=>setScreen('tarjetas')}></Button>
                 <Button title="Practica 10" onPress={()=>setScreen('practica10')}/>
                 <Button title='Practica Componente 1ra' onPress={()=>setScreen('componente1ra')}></Button>
                 <Button title="Practica Pressable" onPress={()=>setScreen('presable')}/>
                 <Button title="Practica Switch" onPress={()=>setScreen('switch')}/>
+                <Button title="Practica TextInput" onPress={()=>setScreen('Componente40')}/>
+                <Button title="Practica Alert" onPress={()=>setScreen('componenteAlerta')}/>
 
 
 
 
 
 
-          </view>
+
+
+
+
+          </View>
          );
      
   return (
        
-    <view>
+    <View>
         <Text>1ra práctica de componentes nativos</Text>
-    </view>
+    </View>
   );//return
 
  }//switch

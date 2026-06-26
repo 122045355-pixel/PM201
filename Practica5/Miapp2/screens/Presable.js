@@ -22,30 +22,35 @@ export default function Presable() {
         </View>
     );
     }
-    const styles = StyleSheet.create({
+  const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 15,
+  },
 
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 15
-    },
+  boton: {
+    padding: 15,
+    borderRadius: 10,
+    width: 180,
+    alignItems: 'center',
+  },
 
-    titulo: {
-        fontSize: 24,
-        fontWeight: 'bold'
-    },
+  botonnormal: {
+    backgroundColor: 'blue',
+  },
 
-    boton: {
-        padding: 15,
-        borderRadius: 10,
-        width: 180,
-        alignItems: 'center'
-    },
+  botonpresionado: {
+    backgroundColor: 'darkblue',
+  },
 
-    textoBoton: {
-        color: 'white',
-        fontWeight: 'bold'
-    }
+  textoBoton: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
 
+  texto: {
+    fontSize: 18,
+  },
 });
