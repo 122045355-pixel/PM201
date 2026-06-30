@@ -10,6 +10,8 @@ import Presable from './Presable';
 import SwitchScreen from './SwitchScreen';
 import { Componente40 } from './Componente4.0';
 import  ComponenteAlerta   from './componenteAlerta';
+import FlatListScreen from './FlatListScreen';
+import SectionListScreen from './SectionListScreen';
 
 
 //zona 2 main components
@@ -30,6 +32,10 @@ export default function App() {
           return <Componente40 />;
         case 'componenteAlerta':
           return <ComponenteAlerta />;
+        case 'flatlist':
+          return <FlatListScreen />;
+        case 'sectionlist':
+          return <SectionListScreen />;
        case 'menu': 
         default:
 
@@ -43,7 +49,8 @@ export default function App() {
                 <Button title="Practica Switch" onPress={()=>setScreen('switch')}/>
                 <Button title="Practica TextInput" onPress={()=>setScreen('Componente40')}/>
                 <Button title="Practica Alert" onPress={()=>setScreen('componenteAlerta')}/>
-
+                <Button title="Practica FlatList" onPress={()=>setScreen('flatlist')}/>
+                <Button title="Practica SectionList" onPress={()=>setScreen('sectionlist')}/>
 
 
 
