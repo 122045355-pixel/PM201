@@ -12,6 +12,9 @@ import { Componente40 } from './Componente4.0';
 import  ComponenteAlerta   from './componenteAlerta';
 import FlatListScreen from './FlatListScreen';
 import SectionListScreen from './SectionListScreen';
+import { ImagenFondo } from './ImagenFondo';
+import { Home } from './Home';
+import { SplashScreen } from './SplashScreen';
 
 
 //zona 2 main components
@@ -36,6 +39,12 @@ export default function App() {
           return <FlatListScreen />;
         case 'sectionlist':
           return <SectionListScreen />;
+        case 'imagenfondo':
+          return <ImagenFondo />;
+        case 'home':
+          return <Home />;
+        case 'splash':
+          return <SplashScreen />;
        case 'menu': 
         default:
 
@@ -51,10 +60,9 @@ export default function App() {
                 <Button title="Practica Alert" onPress={()=>setScreen('componenteAlerta')}/>
                 <Button title="Practica FlatList" onPress={()=>setScreen('flatlist')}/>
                 <Button title="Practica SectionList" onPress={()=>setScreen('sectionlist')}/>
-
-
-
-
+                <Button title="Practica ImagenFondo" onPress={()=>setScreen('imagenfondo')}/>
+                <Button title="Practica Home" onPress={()=>setScreen('home')}/>
+                <Button title="Practica SplashScreen" onPress={()=>setScreen('splash')}/>
 
 
 
