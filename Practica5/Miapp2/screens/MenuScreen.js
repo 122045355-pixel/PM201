@@ -15,7 +15,7 @@ import SectionListScreen from './SectionListScreen';
 import { ImagenFondo } from './ImagenFondo';
 import { Home } from './Home';
 import { SplashScreen } from './SplashScreen';
-
+import ComponentesNativosScreen  from './ComponetesNativosScreen';
 
 //zona 2 main components
 export default function App() {
@@ -45,6 +45,8 @@ export default function App() {
           return <Home />;
         case 'splash':
           return <SplashScreen />;
+        case 'ComponentesNativosScreen':
+          return <ComponentesNativosScreen />;
        case 'menu': 
         default:
 
@@ -63,6 +65,7 @@ export default function App() {
                 <Button title="Practica ImagenFondo" onPress={()=>setScreen('imagenfondo')}/>
                 <Button title="Practica Home" onPress={()=>setScreen('home')}/>
                 <Button title="Practica SplashScreen" onPress={()=>setScreen('splash')}/>
+                <Button title="Practica Componentes Nativos" onPress={()=>setScreen('ComponentesNativosScreen')}/>
 
 
 
